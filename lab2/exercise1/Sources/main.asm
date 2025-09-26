@@ -9,13 +9,13 @@
 ;*****************************************************************
 
 ; export symbols
-            XDEF Entry, _Startup            ; export 'Entry' symbol
-            ABSENTRY Entry                  ; for absolute assembly: mark this as application entry point
+            XDEF Entry, _Startup            ; 
+            ABSENTRY Entry                  ; 
 
 ; Include derivative-specific definitions 
 		INCLUDE 'derivative.inc' 
 
-ROMStart    EQU  $4000  ; absolute address to place my code/constant data
+ROMStart    EQU  $4000  ; 
 
 ; code section
             ORG   ROMStart
